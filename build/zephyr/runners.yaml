@@ -1,0 +1,36 @@
+# Available runners configured by board.cmake.
+runners:
+- linkserver
+- jlink
+- pyocd
+
+# Default flash runner if --runner is not given.
+flash-runner: linkserver
+
+# Default debug runner if --runner is not given.
+debug-runner: linkserver
+
+# Common runner configuration values.
+config:
+  board_dir: C:/Amrith/zephyr/zephyr/boards/nxp/frdm_mcxn236
+  # Build outputs:
+  elf_file: zephyr.elf
+  bin_file: zephyr.bin
+  # Host tools:
+  gdb: C:/Users/Amrith M S/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gdb.exe
+  openocd: C:/Users/Amrith M S/zephyr-sdk-1.0.1/hosttools/openocd/bin/openocd.exe
+  openocd_search:
+    - C:/Users/Amrith M S/zephyr-sdk-1.0.1/hosttools/openocd/share/openocd/scripts
+
+# Runner specific arguments
+args:
+  linkserver:
+    - --dt-flash=y
+    - --device=MCXN236:FRDM-MCXN236
+  jlink:
+    - --dt-flash=y
+    - --device=MCXN236
+    - --reset-after-load
+  pyocd:
+    - --dt-flash=y
+    - --target=mcxn236

@@ -1,0 +1,151 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/Amrith M S/.mcuxpressotools/cmake-3.30.0-windows-x86_64/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:200 (message)"
+      - "C:/Amrith/zephyr/zephyr/cmake/modules/kernel.cmake:129 (project)"
+      - "C:/Amrith/zephyr/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "C:/Amrith/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "C:/Amrith/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:7 (find_package)"
+    message: |
+      The target system is: Generic - 4.4.2 - arm
+      The host system is: Windows - 10.0.26200 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/Amrith M S/.mcuxpressotools/cmake-3.30.0-windows-x86_64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Users/Amrith M S/.mcuxpressotools/cmake-3.30.0-windows-x86_64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Users/Amrith M S/.mcuxpressotools/cmake-3.30.0-windows-x86_64/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "C:/Amrith/zephyr/zephyr/cmake/modules/kernel.cmake:129 (project)"
+      - "C:/Amrith/zephyr/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "C:/Amrith/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "C:/Amrith/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:7 (find_package)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/Users/Amrith M S/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      C:/Users/Amrith M S/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/bin/ld.exe: C:/Users/Amrith M S/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/lib/crt0.o: in function `_cstart':
+      crt0.c:(.init+0x44): undefined reference to `__data_source'
+      C:/Users/Amrith M S/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/bin/ld.exe: crt0.c:(.init+0x48): undefined reference to `__data_size'
+      C:/Users/Amrith M S/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/bin/ld.exe: crt0.c:(.init+0x50): undefined reference to `__bss_size'
+      C:/Users/Amrith M S/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/bin/ld.exe: crt0.c:(.init+0x58): undefined reference to `__tls_base'
+      C:/Users/Amrith M S/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/bin/ld.exe: C:/Users/Amrith M S/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/lib/crt0.o: in function `_start':
+      (.init+0x68): undefined reference to `__stack'
+      C:/Users/Amrith M S/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/bin/ld.exe: C:/Users/Amrith M S/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/lib/crt0.o: in function `_set_stacks':
+      crt0.c:(.text._set_stacks+0x5c): undefined reference to `__stack'
+      C:/Users/Amrith M S/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/bin/ld.exe: C:/Users/Amrith M S/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/lib\\libc.a(libc_picolib_machine_arm_set_tls.c.o): in function `_set_tls':
+      set_tls.c:(.text._set_tls+0x14): undefined reference to `__arm32_tls_tcb_offset'
+      collect2.exe: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/Amrith M S/.mcuxpressotools/cmake-3.30.0-windows-x86_64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Users/Amrith M S/.mcuxpressotools/cmake-3.30.0-windows-x86_64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Users/Amrith M S/.mcuxpressotools/cmake-3.30.0-windows-x86_64/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "C:/Amrith/zephyr/zephyr/cmake/modules/kernel.cmake:129 (project)"
+      - "C:/Amrith/zephyr/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "C:/Amrith/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "C:/Amrith/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:7 (find_package)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/Users/Amrith M S/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc.exe 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      
+      The C compiler identification is GNU, found in:
+        C:/Amrith/POC_NetworkB/CANopen/POC_CANopen_Master/build/CMakeFiles/3.30.0/CompilerIdC/CMakeCCompilerId.o
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/Amrith M S/.mcuxpressotools/cmake-3.30.0-windows-x86_64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Users/Amrith M S/.mcuxpressotools/cmake-3.30.0-windows-x86_64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Users/Amrith M S/.mcuxpressotools/cmake-3.30.0-windows-x86_64/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "C:/Amrith/zephyr/zephyr/cmake/modules/kernel.cmake:129 (project)"
+      - "C:/Amrith/zephyr/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "C:/Amrith/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "C:/Amrith/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:7 (find_package)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/Users/Amrith M S/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      C:/Users/Amrith M S/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/bin/ld.exe: C:/Users/Amrith M S/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/lib/crt0.o: in function `_cstart':
+      crt0.c:(.init+0x44): undefined reference to `__data_source'
+      C:/Users/Amrith M S/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/bin/ld.exe: crt0.c:(.init+0x48): undefined reference to `__data_size'
+      C:/Users/Amrith M S/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/bin/ld.exe: crt0.c:(.init+0x50): undefined reference to `__bss_size'
+      C:/Users/Amrith M S/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/bin/ld.exe: crt0.c:(.init+0x58): undefined reference to `__tls_base'
+      C:/Users/Amrith M S/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/bin/ld.exe: C:/Users/Amrith M S/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/lib/crt0.o: in function `_start':
+      (.init+0x68): undefined reference to `__stack'
+      C:/Users/Amrith M S/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/bin/ld.exe: C:/Users/Amrith M S/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/lib/crt0.o: in function `_set_stacks':
+      crt0.c:(.text._set_stacks+0x5c): undefined reference to `__stack'
+      C:/Users/Amrith M S/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/bin/ld.exe: C:/Users/Amrith M S/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/../../../../arm-zephyr-eabi/lib\\libc.a(libc_picolib_machine_arm_set_tls.c.o): in function `_set_tls':
+      set_tls.c:(.text._set_tls+0x14): undefined reference to `__arm32_tls_tcb_offset'
+      collect2.exe: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/Amrith M S/.mcuxpressotools/cmake-3.30.0-windows-x86_64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Users/Amrith M S/.mcuxpressotools/cmake-3.30.0-windows-x86_64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Users/Amrith M S/.mcuxpressotools/cmake-3.30.0-windows-x86_64/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "C:/Amrith/zephyr/zephyr/cmake/modules/kernel.cmake:129 (project)"
+      - "C:/Amrith/zephyr/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "C:/Amrith/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "C:/Amrith/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:7 (find_package)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Users/Amrith M S/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc.exe 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+      
+      The CXX compiler identification is GNU, found in:
+        C:/Amrith/POC_NetworkB/CANopen/POC_CANopen_Master/build/CMakeFiles/3.30.0/CompilerIdCXX/CMakeCXXCompilerId.o
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/Amrith M S/.mcuxpressotools/cmake-3.30.0-windows-x86_64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1192 (message)"
+      - "C:/Users/Amrith M S/.mcuxpressotools/cmake-3.30.0-windows-x86_64/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/Amrith/zephyr/zephyr/cmake/modules/kernel.cmake:135 (enable_language)"
+      - "C:/Amrith/zephyr/zephyr/cmake/modules/zephyr_default.cmake:138 (include)"
+      - "C:/Amrith/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "C:/Amrith/zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:7 (find_package)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      arm-zephyr-eabi-gcc.exe (Zephyr SDK 1.0.1) 14.3.0
+      Copyright (C) 2024 Free Software Foundation, Inc.
+      This is free software; see the source for copying conditions.  There is NO
+      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      
+...

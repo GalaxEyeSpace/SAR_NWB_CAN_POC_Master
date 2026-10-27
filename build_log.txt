@@ -1,0 +1,24 @@
+Building C:\Amrith\POC_NetworkB\CANopen\POC_CANopen_Master\ for frdm_mcxn236 (pristine=always)
+-- west build: making build dir C:\Amrith\POC_NetworkB\CANopen\POC_CANopen_Master\build pristine
+-- west build: generating a build system
+-- Application: C:/Amrith/POC_NetworkB/CANopen/POC_CANopen_Master
+-- CMake version: 3.30.0
+-- Found Python3: C:/Users/Amrith M S/.mcuxpressotools/.mcux-venv-3.12/Scripts/python.exe (found suitable version "3.12.12", minimum required is "3.12") found components: Interpreter
+-- Cache files will be written to: C:/Amrith/zephyr/zephyr/.cache
+-- Zephyr version: 4.4.2 (C:/Amrith/zephyr/zephyr)
+-- Found west (found suitable version "1.5.0", minimum required is "0.14.0")
+-- Board: frdm_mcxn236, qualifiers: mcxn236
+-- ZEPHYR_TOOLCHAIN_VARIANT not set, trying to locate Zephyr SDK
+-- Found host-tools: zephyr 1.0.1 (C:/Users/Amrith M S/zephyr-sdk-1.0.1)
+-- Found toolchain: zephyr 1.0.1 (C:/Users/Amrith M S/zephyr-sdk-1.0.1)
+-- Found Dtc: C:/Users/Amrith M S/.mcuxpressotools/dtc-1.6.1/tools/usr/bin/dtc.exe (found suitable version "1.6.1", minimum required is "1.4.6")
+-- Found BOARD.dts: C:/Amrith/zephyr/zephyr/boards/nxp/frdm_mcxn236/frdm_mcxn236.dts
+-- Generated zephyr.dts: C:/Amrith/POC_NetworkB/CANopen/POC_CANopen_Master/build/zephyr/zephyr.dts
+-- Generated pickled edt: C:/Amrith/POC_NetworkB/CANopen/POC_CANopen_Master/build/zephyr/edt.pickle
+-- Generated devicetree_generated.h: C:/Amrith/POC_NetworkB/CANopen/POC_CANopen_Master/build/zephyr/include/generated/zephyr/devicetree_generated.h
+Parsing C:/Amrith/POC_NetworkB/CANopen/POC_CANopen_Master/Kconfig
+Loaded configuration 'C:/Amrith/zephyr/zephyr/boards/nxp/frdm_mcxn236/frdm_mcxn236_defconfig'
+Merged configuration 'C:/Amrith/POC_NetworkB/CANopen/POC_CANopen_Master/prj.conf'
+-- Configuring incomplete, errors occurred!
+
+BUILD FAILED

@@ -1,0 +1,6 @@
+west:
+  command: C:\Users\Amrith M S\.mcuxpressotools\.mcux-venv-3.12\Scripts\west build
+    -b frdm_mcxn236 -s C:\Amrith\POC_NetworkB\CANopen\POC_CANopen_Master\. -d C:\Amrith\POC_NetworkB\CANopen\POC_CANopen_Master\build
+    -p always
+  topdir: C:\Amrith\zephyr
+  version: 1.5.0

@@ -1,0 +1,1 @@
+"mcuboot":"C:/Amrith/zephyr/bootloader/mcuboot":"C:/Amrith/zephyr/bootloader/mcuboot/boot/zephyr/sysbuild"

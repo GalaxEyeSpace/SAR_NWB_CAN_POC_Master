@@ -1,0 +1,58 @@
+cmake:
+  application:
+    configuration-dir: 'C:/Amrith/POC_NetworkB/CANopen/POC_CANopen_Master'
+    source-dir: 'C:/Amrith/POC_NetworkB/CANopen/POC_CANopen_Master'
+  board:
+    name: 'frdm_mcxn236'
+    path:
+     - 'C:/Amrith/zephyr/zephyr/boards/nxp/frdm_mcxn236'
+    qualifiers: 'mcxn236'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - 'C:/Amrith/zephyr/zephyr/dts/bindings'
+    files:
+     - 'C:/Amrith/zephyr/zephyr/boards/nxp/frdm_mcxn236/frdm_mcxn236.dts'
+    include-dirs:
+     - 'C:/Amrith/zephyr/modules/hal/ambiq/dts'
+     - 'C:/Amrith/zephyr/modules/hal/atmel/include'
+     - 'C:/Amrith/zephyr/modules/hal/bouffalolab/include'
+     - 'C:/Amrith/zephyr/modules/hal/bouffalolab/include/zephyr'
+     - 'C:/Amrith/zephyr/modules/hal/gigadevice/include'
+     - 'C:/Amrith/zephyr/modules/hal/microchip/include'
+     - 'C:/Amrith/zephyr/modules/hal/microchip/dts'
+     - 'C:/Amrith/zephyr/modules/hal/nuvoton/dts'
+     - 'C:/Amrith/zephyr/modules/hal/nxp/dts'
+     - 'C:/Amrith/zephyr/modules/hal/stm32/dts'
+     - 'C:/Amrith/zephyr/modules/hal/ti/dts'
+     - 'C:/Amrith/zephyr/zephyr/include'
+     - 'C:/Amrith/zephyr/zephyr/include/zephyr'
+     - 'C:/Amrith/zephyr/zephyr/dts/common'
+     - 'C:/Amrith/zephyr/zephyr/dts/vendor'
+     - 'C:/Amrith/zephyr/zephyr/dts/rx'
+     - 'C:/Amrith/zephyr/zephyr/dts/x86'
+     - 'C:/Amrith/zephyr/zephyr/dts/xtensa'
+     - 'C:/Amrith/zephyr/zephyr/dts/sparc'
+     - 'C:/Amrith/zephyr/zephyr/dts/riscv'
+     - 'C:/Amrith/zephyr/zephyr/dts/posix'
+     - 'C:/Amrith/zephyr/zephyr/dts/arm64'
+     - 'C:/Amrith/zephyr/zephyr/dts/arm'
+     - 'C:/Amrith/zephyr/zephyr/dts/arc'
+     - 'C:/Amrith/zephyr/zephyr/dts'
+  kconfig:
+    files:
+     - 'C:/Amrith/zephyr/zephyr/boards/nxp/frdm_mcxn236/frdm_mcxn236_defconfig'
+     - 'C:/Amrith/POC_NetworkB/CANopen/POC_CANopen_Master/prj.conf'
+    user-files:
+     - 'C:/Amrith/POC_NetworkB/CANopen/POC_CANopen_Master/prj.conf'
+  toolchain:
+    name: 'zephyr'
+    path: 'C:/Users/Amrith M S/zephyr-sdk-1.0.1'
+  zephyr:
+    version: '4.4.2'
+    zephyr-base: 'C:/Amrith/zephyr/zephyr'
+version: '0.1.0'
+west:
+  command: 'C:\Users\Amrith M S\.mcuxpressotools\.mcux-venv-3.12\Scripts\west build -b frdm_mcxn236 -s C:\Amrith\POC_NetworkB\CANopen\POC_CANopen_Master\. -d C:\Amrith\POC_NetworkB\CANopen\POC_CANopen_Master\build -p always'
+  topdir: 'C:\Amrith\zephyr'
+  version: '1.5.0'

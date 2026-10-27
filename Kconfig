@@ -1,0 +1,8 @@
+mainmenu "POC_CANopen_Master"
+
+config MASTER_NODE_ID
+	int "CANopen node-ID of the master"
+	range 1 127
+	default 1
+
+source "Kconfig.zephyr"
