@@ -45,7 +45,8 @@ extern "C" {
                            CO_CONFIG_SDO_CLI_LOCAL | CO_CONFIG_GLOBAL_FLAG_CALLBACK_PRE | \
                            CO_CONFIG_GLOBAL_FLAG_TIMERNEXT)
 #define CO_CONFIG_FIFO    (CO_CONFIG_FIFO_ENABLE)
-
+#define CO_CONFIG_NMT  (CO_CONFIG_NMT_MASTER | CO_CONFIG_GLOBAL_FLAG_CALLBACK_PRE | \
+                        CO_CONFIG_GLOBAL_FLAG_TIMERNEXT)
 /* Basic definitions. If big endian, CO_SWAP_xx macros must swap bytes. */
 #define CO_LITTLE_ENDIAN
 #define CO_SWAP_16(x) x

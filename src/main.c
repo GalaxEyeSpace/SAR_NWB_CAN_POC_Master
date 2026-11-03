@@ -39,7 +39,7 @@ LOG_MODULE_REGISTER(main, LOG_LEVEL_INF);
 #define OD_STATUS_BITS       NULL
 
 #define CAN_BITRATE_KBPS     500
-#ifdef SYS_CONST_DEBUG
+#if SYS_CONST_DEBUG
 extern struct k_msgq dbg_rx_q;
 CO_CANrxMsg_t m;
 #endif
@@ -231,10 +231,13 @@ main(void) {
         log_printf("CANopenNode master - Running, node-ID %u", activeNodeId);
 
         int64_t lastTicks = k_uptime_ticks();      /* time of the previous loop pass */
+        bool nmtStartSent = false;
 
         while (reset == CO_RESET_NOT) {
             /* loop for normal program execution ******************************************/
             /* get time difference since last function call */
+
+            
             int64_t nowTicks = k_uptime_ticks();
             uint32_t timeDifference_us = (uint32_t)k_ticks_to_us_floor64(nowTicks - lastTicks);
             lastTicks = nowTicks;
@@ -245,6 +248,11 @@ main(void) {
             if ((k_uptime_get() - lastDiag_ms) >= 2000) {
                 struct can_bus_err_cnt ec = {0};
                 enum can_state st;
+                if (nmtStartSent == false) {
+                    CO_NMT_sendCommand(CO->NMT, CO_NMT_ENTER_OPERATIONAL, 0);
+                    log_printf("NMT start sent to all nodes");
+                    nmtStartSent = true;
+                }
 
                 lastDiag_ms = k_uptime_get();
                 (void)can_get_state(can_dev, &st, &ec);     
@@ -290,7 +298,7 @@ main(void) {
             trm_print(&trm[1]);
             trm_print(&trm[2]);
             trm_print(&trm[3]);
-            #ifdef SYS_CONST_DEBUG
+            #if SYS_CONST_DEBUG
 
             while (k_msgq_get(&dbg_rx_q, &m, K_NO_WAIT) == 0) {
             log_printf("bus 0x%03X [%u] %02X %02X %02X %02X %02X %02X %02X %02X",
